@@ -9,5 +9,5 @@ jobs:
         with: { java-version: '17', distribution: 'temurin', cache: gradle }
       - run: gradle wrapper
       - run: ./gradlew assembleDebug
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with: { name: LED-Clock-APK, path: app/build/outputs/apk/debug/app-debug.apk }
