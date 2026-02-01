@@ -1,13 +1,25 @@
 name: Build APK
 on: [push, workflow_dispatch]
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-java@v3
-        with: { java-version: '17', distribution: 'temurin', cache: gradle }
-      - run: gradle wrapper
-      - run: ./gradlew assembleDebug
-      - uses: actions/upload-artifact@v4
-        with: { name: LED-Clock-APK, path: app/build/outputs/apk/debug/app-debug.apk }
+      - uses: actions/checkout@v4
+
+      - name: set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: gradle
+
+      - name: Build with Gradle
+        run: |
+          gradle assembleDebug
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: LED-Clock-APK
+          path: app/build/outputs/apk/debug/app-debug.apk
