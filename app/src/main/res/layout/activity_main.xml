@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:textColor="#FF1A1A"
-        android:textSize="120sp"
+        android:textSize="117sp"
         android:lineSpacingExtra="24sp"
         android:lineSpacingMultiplier="1.1"
         android:gravity="center"
