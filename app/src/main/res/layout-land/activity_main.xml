@@ -10,6 +10,6 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:textColor="#FF1A1A"
-        android:textSize="187sp"
+        android:textSize="164sp"
         android:fontFamily="@font/dseg7classiclight"/>
 </RelativeLayout>
