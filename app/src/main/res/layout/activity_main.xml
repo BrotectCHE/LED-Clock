@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#000000">
-
-    <TextView
-        android:id="@+id/clockText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textColor="#FF1A1A"
-        android:textSize="120sp"
-        android:fontFamily="@font/dseg7classiclight"/>
-</RelativeLayout>
+<TextView
+    android:id="@+id/clockText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:textColor="#FF1A1A"
+    android:textSize="150sp"
+    android:fontFamily="@font/dseg7classiclight"
+    android:lineSpacingExtra="20sp"
+    android:gravity="center"
+    android:includeFontPadding="false" />
