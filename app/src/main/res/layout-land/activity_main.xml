@@ -9,6 +9,6 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:textColor="#FF1A1A"
-        android:textSize="150sp"   <!-- più grande per landscape -->
+        android:textSize="150sp"
         android:fontFamily="monospace"/>
 </RelativeLayout>
